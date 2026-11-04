@@ -1,0 +1,58 @@
+{
+  "expo": {
+    "name": "أبلة فهيدة",
+    "slug": "abla-fahida",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "ablafahida",
+    "userInterfaceStyle": "light",
+    "primaryColor": "#B6362A",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.ablafahida.app",
+      "infoPlist": {
+        "CFBundleDevelopmentRegion": "ar",
+        "CFBundleLocalizations": ["ar"]
+      }
+    },
+    "android": {
+      "package": "com.ablafahida.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#B6362A",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "lang": "ar"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-localization",
+        {
+          "supportsRTL": true,
+          "forcesRTL": true,
+          "supportedLocales": ["ar"]
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#B6362A",
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 120
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
